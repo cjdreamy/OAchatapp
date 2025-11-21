@@ -1,0 +1,60 @@
+/* Default (Light Theme) */
+:root {
+  --bg-color: #f0f2f5;
+  --text-color: #000;
+  --chat-bg: #fff;
+  --sidebar-bg: #202123;
+  --sidebar-text: #fff;
+  --input-bg: #fafafa;
+  --input-border: #ccc;
+  --bubble-user: #0078ff;
+  --bubble-ai: #e5e5ea;
+}
+
+/* Dark Theme */
+[data-theme="dark"] {
+  --bg-color: #181a1b;
+  --text-color: #e8e6e3;
+  --chat-bg: #1f2124;
+  --sidebar-bg: #111;
+  --sidebar-text: #ccc;
+  --input-bg: #2a2b2f;
+  --input-border: #444;
+  --bubble-user: #0078ff;
+  --bubble-ai: #333;
+}
+
+/* Apply variables globally */
+body {
+  background: var(--bg-color);
+  color: var(--text-color);
+}
+
+.app-wrapper {
+  background: var(--chat-bg);
+}
+
+.sidebar {
+  background: var(--sidebar-bg);
+  color: var(--sidebar-text);
+}
+
+.input-area {
+  background: var(--input-bg);
+  border-top: 1px solid var(--input-border);
+}
+
+.input-area input {
+  background: var(--input-bg);
+  border: 1px solid var(--input-border);
+  color: var(--text-color);
+}
+
+.bubble {
+  background: var(--bubble-ai);
+}
+
+.user .bubble {
+  background: var(--bubble-user);
+  color: #fff;
+}
