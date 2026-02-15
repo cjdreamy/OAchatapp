@@ -13,6 +13,9 @@ app.set("view engine", "ejs");
 app.get("/", (req, res) => {
   res.render("index");
 });
+app.get("/math", (req, res) =>{
+  res.render("math");
+});
 
 const openai = new OpenAI({
   apiKey: process.env.OPENAI_API_KEY,

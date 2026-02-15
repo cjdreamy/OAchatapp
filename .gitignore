@@ -1,7 +1,7 @@
 # Dependency directory
-node_modules/
+ node_modules/
 
-# Environment variables (Crucial API keys banah)
+# # Environment variables (Crucial API keys banah)
 ./.env
-.env.*.env
+ .env.*.env
 .env
